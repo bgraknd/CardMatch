@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBrain"
+        tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gifbrain"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/oyun_turu"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tbgChildSpacing="auto"
+            app:tbgChildSpacingForLastRow="align"
+            app:tbgRowSpacing="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/zorluk">
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/basit_oyun"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Basit Oyun"/>
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/zamana_karsi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Zamana Karsi"/>
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/sinirli_hamle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Sinirli Hamle"/>
+
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/zorluk"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tbgChildSpacing="auto"
+            app:tbgChildSpacingForLastRow="align"
+            app:tbgRowSpacing="8dp" app:layout_constraintHorizontal_bias="0.495"
+            android:layout_marginBottom="24dp" app:layout_constraintBottom_toTopOf="@+id/buttonBasla">
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/easy_game"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="3x3"/>
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/normal_game"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="6x6"/>
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:id="@+id/hard_game"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="9x9"/>
+
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+
+    <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/buttonBasla"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:layout_marginEnd="162dp"
+            android:text="Basla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
